@@ -4,14 +4,16 @@
   "description": "xls-parse",
   "main": "parse.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-    "copyfile": "mkdir -p build && cp -r example package.json README.md .npmignore build/",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "copyfile": "mkdir -p build && cp -r bin parse.js example package.json README.md .npmignore build/",
     "release": "npm run copyfile && cd build/ && npm publish",
     "patch": "rm -rf build && npm version patch && npm run release"
   },
   "author": "rockywu<wjl19890427@hotmail.com>",
   "license": "ISC",
   "dependencies": {
+    "colors": "^1.1.2",
+    "commander": "^2.9.0",
     "csvjson": "^2.2.0",
     "mkdirp": "^0.5.1",
     "underscore": "^1.8.3",

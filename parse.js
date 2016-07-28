@@ -94,9 +94,9 @@ function sortArr(arr, sorts) {
 exports.formatXls2Obj = formatXls2Obj;
 function formatXls2Obj(file, sheetName, sorts, without) {
     var sources = xls2Obj(file, sheetName);
-    var rs = [];
+    var rs = {};
     _.forEach(sources, function(arr, k) {
-        rs.push(arr2Obj(arr, sorts, without));
+        rs[k] = arr2Obj(arr, sorts, without);
     });
     return rs;
 }
