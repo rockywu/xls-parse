@@ -95,6 +95,9 @@ exports.formatXls2Obj = formatXls2Obj;
 function formatXls2Obj(file, sheetName, sorts, without) {
     var sources = xls2Obj(file, sheetName);
     var rs = {};
+    if(_.isEmpty(sorts) && _.isEmpty(without)) {
+        return sources;
+    }
     _.forEach(sources, function(arr, k) {
         rs[k] = arr2Obj(arr, sorts, without);
     });
