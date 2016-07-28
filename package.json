@@ -3,7 +3,7 @@
   "version": "1.0.2",
   "description": "xls-parse",
   "main": "parse.js",
-  "bin": "./bin/xlsparse",
+  "bin": "./bin/xls-parse",
   "repository": {
     "type": "git",
     "url": "https://github.com/rockywu/xls-parse.git"
