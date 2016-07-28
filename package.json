@@ -1,6 +1,6 @@
 {
   "name": "xls-parse",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "xls-parse",
   "main": "parse.js",
   "bin": "./bin/xls-parse",
